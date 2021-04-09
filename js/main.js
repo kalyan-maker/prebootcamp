@@ -19,3 +19,22 @@ inp.on("close", () => {
                     sum = sum + +something[j];
                 }
             }
+    
+    //to take integer value and print integer value
+
+const readline = require('readline');
+const inp = readline.createInterface({
+    input: process.stdin
+
+});
+const userInput = [];
+inp.on("line", (data) => {
+    userInput.push(data);
+
+});
+inp.on("close", () => {
+    //start-here
+    var add = userInput[0]
+    console.log(add);
+    //end-here});
+});
